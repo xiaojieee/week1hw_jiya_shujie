@@ -12,7 +12,6 @@ upper_case = var.upper()
 # symbols and numbers are ignored
 print('This is in upper case: ', upper_case)
 
-
 numbers_of_characters_in_var = len(var)
 print('The number of characters in the value: ', numbers_of_characters_in_var)
 # len is a built-in function that calculates the number of characters in a string
@@ -28,7 +27,6 @@ print('It is all decimal characters: ', does_it_contain_numeric_characters)
 
 print('It is all decimal characters: ', var.isdecimal())
 # shortened to one line
-
 
 print('It is all digits: ', var.isdigit())
 # isdigit() returns True if all characters in string are integers and no spaces
