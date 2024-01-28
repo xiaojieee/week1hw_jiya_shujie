@@ -1,3 +1,6 @@
+import math
+# this to import math into the code
+
 # the equation
 print('The equation: ', 'y = y\N{SUBSCRIPT ZERO} + x tan\N{GREEK CAPITAL LETTER THETA} - gx\N{SUPERSCRIPT TWO} / 2(v\N{SUBSCRIPT ZERO} cos\N{GREEK CAPITAL LETTER THETA})\N{SUPERSCRIPT TWO}')
 print('y\N{SUBSCRIPT ZERO} = 1m')
@@ -6,8 +9,6 @@ print('\N{GREEK CAPITAL LETTER THETA} = 80')
 print('g = 9.81 m/s')
 print('v\N{SUBSCRIPT ZERO} = 44 m/s')
 
-import math
-# this to import math into the code
 
 height_of_barrel = 1
 horizontal_distance = 0.5
@@ -25,3 +26,9 @@ print('gx\N{SUPERSCRIPT TWO} =', g_x_2)
 
 v0_cos_theta_2 = pow(44 * (math.cos(theta)), 2)
 print('(v\N{SUBSCRIPT ZERO} cos\N{GREEK CAPITAL LETTER THETA})\N{SUPERSCRIPT TWO} =', v0_cos_theta_2)
+
+right = height_of_barrel + x_tan_theta
+left = g_x_2 / 2 * v0_cos_theta_2
+print(right)
+print(left)
+print(right - left)
