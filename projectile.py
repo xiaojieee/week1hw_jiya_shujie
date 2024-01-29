@@ -1,5 +1,6 @@
 import math
 # this to import math into the code
+# import usually goes on the first line
 
 # the equation
 print('The equation: ', 'y = y\N{SUBSCRIPT ZERO} + x tan\N{GREEK CAPITAL LETTER THETA} - gx\N{SUPERSCRIPT TWO} / 2(v\N{SUBSCRIPT ZERO} cos\N{GREEK CAPITAL LETTER THETA})\N{SUPERSCRIPT TWO}')
@@ -50,3 +51,5 @@ print('y =', y)
 print('The height of the projectile rounded to 2 decimal place is', str(round(y, 2)), 'm')
 # used the rounding function to round the answer to 2 decimal place
 
+# y = height_of_barrel + (horizontal_distance * (math.tan(theta))) - (((gravity * pow(horizontal_distance, 2))) / 2 * (pow((velocity *(math.cos(theta))), 2)))
+# did not work in one line, come back to it
