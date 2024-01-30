@@ -35,10 +35,27 @@ print(list_file_name)
 
 file_size = os.path.getsize(hdir)
 print(file_size)
+# the files total size
 
-
+for hdir in list_file_name:
+    size = os.path.getsize(hdir)
+    print(f"{hdir}: {size}")
+# 'for' loop iterate through a sequence
+# loop variable holds a copy of each element in turn
+# the f-string allows embed expressions inside string literals
+# hdir and size are the two variables I want to display side by side
 
 # TODO: Add a test to only display files that are not zero length
 
+    if size > 0:
+        print(f"{hdir}: {size}")
+# if size is bigger than zero print the file and its size
+# remember to indent for it to work
+# doesn't work check back on this
+
 # TODO: Remove the leading directory name(s) from each filename before you print it -
 # using os.path.basename()
+
+    if size > 0:
+        file_name = os.path.basename(hdir)
+        print(f"{file_name}: {size}")
