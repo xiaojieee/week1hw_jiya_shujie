@@ -6,8 +6,5 @@ var = input("please enter a value: ").upper()
 
 
 # now we need to print it but the value of var in uppercase
-
-
 print('uppercase', var)
 
-# WHY IS IT NOT UPPERCASE!
