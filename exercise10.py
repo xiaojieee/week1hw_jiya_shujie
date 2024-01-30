@@ -71,6 +71,8 @@ attempts = 3
 while attempts > 0:
     supplied_pin = input("Enter your PIN:")
 
+# while there's attempts left print the "enter your pin"
+
     if supplied_pin == correct_pin:
         print("Correct pin!")
         break
@@ -78,6 +80,8 @@ while attempts > 0:
     else:
         attempts -= 1
         print(f"Wrong pin, {attempts} attempts left")
+    #   -= means subtract AND: attempts = attempts - 1
 
 if attempts == 0:
-    print("You have entered the wrong pn 3 times, no attempts left")
+    print("You have entered the wrong pin 3 times, no attempts left")
+    # if there's no attempts left print the end message
