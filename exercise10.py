@@ -11,7 +11,7 @@ else:
     hdir = os.environ['HOME']
 # == is an equality operator
 # environ['HOME'] or environ['HOMEPATH']  is the pathname of the home directory
-#HOMEPATH is for windows, HOME is for Linux
+# HOMEPATH is for windows, HOME is for Linux
 
 print(sys.platform)
 # line 15 show sys platform is in fact win32
@@ -59,3 +59,25 @@ for hdir in list_file_name:
     if size > 0:
         file_name = os.path.basename(hdir)
         print(f"{file_name}: {size}")
+
+
+# Exercise 10 Q2 create a bank pin program
+
+print("Welcome to the bank!")
+correct_pin = "1234"
+# the pin have to be in a string, the input function is treated as string
+attempts = 3
+
+while attempts > 0:
+    supplied_pin = input("Enter your PIN:")
+
+    if supplied_pin == correct_pin:
+        print("Correct pin!")
+        break
+    #   break is used to break the loop if the answer is correct
+    else:
+        attempts -= 1
+        print(f"Wrong pin, {attempts} attempts left")
+
+if attempts == 0:
+    print("You have entered the wrong pn 3 times, no attempts left")
