@@ -33,3 +33,4 @@ print('It is all digits: ', var.isdigit())
 
 print('It is all numeric: ', var.isnumeric())
 # isnumeric() works with fractions, superscript and Roman numerals
+
