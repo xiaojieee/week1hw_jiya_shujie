@@ -53,3 +53,4 @@ print('The height of the projectile rounded to 2 decimal place is', str(round(y,
 
 # y = height_of_barrel + (horizontal_distance * (math.tan(theta))) - (((gravity * pow(horizontal_distance, 2))) / 2 * (pow((velocity *(math.cos(theta))), 2)))
 # did not work in one line, come back to it
+# check new file
