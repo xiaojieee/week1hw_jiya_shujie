@@ -18,6 +18,7 @@ v = 44
 theta = 80 * (math.pi/180)
 
 y = y0 + x * math.tan(theta) - (g * x**2) / (2 * (v * math.cos(theta))**2)
+# Python automatically does BIDMAS
 print('y =', y)
 print('The height of the projectile rounded to 2 decimal place is', str(round(y, 2)), 'm')
 # used the rounding function to round the answer to 2 decimal place

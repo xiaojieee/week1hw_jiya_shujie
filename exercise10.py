@@ -19,7 +19,8 @@ print(hdir)
 # my variable hdir shows the name of my home directory which is \user\sjzhu
 
 # Construct a portable wildcard pattern
-
+# the '*' is the wild card pattern in this situation
+# it is used to matches any sequence of characters
 pattern = os.path.join(hdir, '*')
 # os.path.join function is used to join one or more path components
 # the '*' here means all
